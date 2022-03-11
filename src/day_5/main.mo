@@ -25,5 +25,16 @@ actor {
   public shared({caller}) func show_favourite_number() : async ?Nat{
     return favouriteNumber.get(caller);
   };
+// Challenge 5
+  public shared({caller}) func update_favourite_number(n : Nat) : async (){
+    favouriteNumber.put(caller : Principal, n : Nat);
+  };
+  public shared({caller}) func delete_favourite_number() : async (){
+    favouriteNumber.delete(caller : Principal);
+  };
+
+
+// Challenge 6
+
 };
 
