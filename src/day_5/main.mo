@@ -34,7 +34,26 @@ actor {
   };
 
 
-// Challenge 6
+// Challenge 6 - Deposit Cycles
+
+
+// Challenge 7 - Withdraw Cycles
+
+
+// Challenge 8 - Implement a stable variable Nat counting  canister upgrades
+
+
+// Challenge 9 - Copy favourite number routines to new file and use stable type 
+// Array to persist Entries across upgrades
+private stable var favouriteNumberEntries : [(Principal, Nat)] = [];
+
+system func preupgrade() {
+favouriteNumberEntries : Iter.toArray()= [(Principal, Nat)] = [];
+}
+
+system func postupgrade() {
+  
+}
 
 };
 
