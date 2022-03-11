@@ -1,5 +1,5 @@
 import Principal "mo:base/Principal";
-import Nat ; "mo:base/Nat";
+import Nat "mo:base/Nat";
 
 
 actor {
